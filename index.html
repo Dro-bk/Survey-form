@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+<title>Holidays survey form</title>
+</head>
+<header>
+  <h1 id="title"> Survey Form</h1>
+</header>
+<div class="container">
+    <p id="description">Tell us about your holidays
+      </p>
+        <form id="survey-form" action="#">
+            <div class="form-box">
+          <label class="label-tab" id="name-label" for="name">Name:</label>
+          <input class="input-tab" type="text" name="name" id="name" class="input-field" placeholder="Your name" required>
+  </div>
+  <div class="form-box">
+    <label class="label-tab" id="email-label" for="email">Email:</label>
+    <input class="input-tab" type="email" name="email" id="email" class="input-field" placeholder="Your E-Mail" required>
+  </div>
+  <div class="form-box">
+    <label class="label-tab" id="number-label" for="number">Age:</label>
+    <input class="input-tab" type="number" min="1" max="150" name="age" id="number" class="input-field" placeholder="Your age" required>
+  </div>
+  <div class="form-box">
+    <label class="label-tab" for="dropdown">How did you get there ?</label>
+    <select class="input-tab" id="dropdown" name="transport">
+<option disabled selected value>Select an option</option>
+<option value="train">Train/Coach</option>
+<option value="plane">Plane</option>
+<option value="car">Car</option>
+<option value="boat">Boat</option>
+<option value="other">Other</option>
+      </select>
+  </div>
+  <div class="form-box">
+    <label class="label-tab">Where did you go?</label>
+      <ul class="input-tab">
+     <li><label><input value="mountain" type="radio" name="destination-choice">Mountain
+       </label></li>
+    <li><label><input value="beach" type="radio" name="destination-choice">Beach
+      </label></li>
+    <li><label><input value="city" type="radio" name="destination-choice">City
+      </label></li>
+      </ul>
+  </div>
+  <div class="form-box">
+    <label class="label-tab">What things do you consider before choosing a holiday destination?
+    </label>
+    <ul class="input-tab">
+      <li><label><input value="weather" type="checkbox" name="answer-chkbx1">Weather
+      </label></li>
+      <li><label><input value="time" type="checkbox" name="answer-chkbx1">How much time you have on hand
+      </label></li>
+      <li><label><input value="budget" type="checkbox" name="answer-chkbx1">Your budget
+      </label></li>
+      <li><label><input value="activites" type="checkbox" name="answer-chkbx1">Activites
+       </label></li>
+      <li><label><input value="other" type="checkbox" name="answer-chkbox1">Other
+        <span>,please specify:</span>
+      <input class="precision" type="text" name="answer-chkbox1" placeholder="   ...">
+       </label></li>
+    </ul>
+    </div>
+  <div class="form-box">
+    <label class="label-tab">Do you have any plans to take a holiday in the next 12 months?</label>
+      <ul class="input-tab">
+        <li><label><input value="yes" type="radio" name="year">Yes
+        </label></li>
+        <li><label><input value="no" type="radio" name="year">No
+        </label></li>
+        <li><label><input value="city" type="radio" name="year">I'm not sure
+        </label></li>
+      </ul>
+  </div>
+  <div class="form-box">
+    <label for="comments" class="label-tab">Do you have anything to add?</label>
+    <textarea id="comments" class="input-tab" name="comments" rows="5" cols="25" placeholder="Write your comment here..."></textarea>
+  </div>
+  <div class="button">
+    <button id="submit" type="submit">Submit</button>
+  </div>
+  </form>
+</div>
+</html>
+  
